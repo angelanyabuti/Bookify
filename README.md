@@ -1,2 +1,1 @@
-# Bookify
-Online bookstore
+# online-bookstore

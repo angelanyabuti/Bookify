@@ -1,0 +1,35 @@
+:root {
+  --border: 0.1rem solid black;
+  --box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --light-bg: #f5f5f5;
+  --white: #fff;
+  --black: #333;
+}
+.btn,
+.option-btn,
+.delete-btn,
+.white-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover {
+  background-color: blue;
+}
+.white-btn,
+.btn {
+  background-color: antiquewhite;
+}
+.option-btn {
+  background-color: aqua;
+}
+.delete-btn {
+  background-color: red;
+}
