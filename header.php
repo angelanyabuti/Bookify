@@ -67,7 +67,7 @@ function generateLoggedInHeader() {
         </style>
         <div class="header-2">
             <div class="flex">
-                <a href="index.php" class="logo"><img src="images/phone-call.png" alt="" srcset=""></a>
+                <a href="index.php" class="logo"><img src="images/logo.png" alt="" srcset=""></a>
                 <nav class="navbar">
                     <a href="index.php">home</a>
                     <a href="about.php">about us</a>

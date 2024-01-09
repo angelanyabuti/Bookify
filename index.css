@@ -273,6 +273,7 @@ html {
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
+  height: 60px;
   margin: 0 auto;
   position: relative;
 }
@@ -280,6 +281,7 @@ html {
 .header .header-1 .flex .share a {
   font-size: 2.5rem;
   margin-right: 1.5rem;
+  max-width: 1200px;
   color: green;
 }
 .header .header-1 .flex .share a:hover {
@@ -298,9 +300,19 @@ html {
 .header .header-1 .flex p a:hover {
   text-decoration: underline;
 }
-
 .header .header-2 .flex .logo {
-  font-size: 2.5rem;
+  flex-shrink: 0; 
+  height: 180px;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+
+
+}
+
+.header .header-2 .flex .logo img{
+  height: 180px;
 }
 .header .header-2 .flex .navbar a {
   margin: 0 1rem;
