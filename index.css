@@ -421,10 +421,11 @@ html {
 }
 
 /* home page products section*/
+
 .products .box-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
+  display: block;
   grid-template-columns: repeat(auto-fit, 30rem);
   align-items: flex-start;
   gap: 1.5rem;
@@ -438,6 +439,14 @@ html {
   text-align: center;
   border: var(--border);
   position: relative;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+/* Add styles for Slick Slider navigation (optional) */
+.slick-prev,
+.slick-next {
+  font-size: 2rem;
+  color: #000;
 }
 .products .box-container .out-of-stock {
   border-radius: 0.5rem;

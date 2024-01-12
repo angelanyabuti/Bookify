@@ -6,6 +6,11 @@
    <link rel="stylesheet" href="admin.css" />
    <link rel="stylesheet" href="index.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+   <!--Slick slider for the product slider-->
+   <!-- Slick Slider CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <!-- Slick Slider Theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
    <?php
@@ -69,9 +74,10 @@
          <a href="about.php" class="white-btn">discover more</a>
       </div>
    </section>
-
+   <div class="box-container">
    <section class="products">
       <h1 class="title">latest products</h1>
+      <div id="product-slider" class="slider-container">
       <div class="box-container">
          <?php  
          $select_products = mysqli_query($conn, "SELECT * FROM `products` ORDER BY bk_id DESC LIMIT 6") or die('query failed');
@@ -101,10 +107,14 @@
          }
          ?>
       </div>
+      </div>
+      
       <div class="load-more" style="margin-top: 2rem; text-align:center">
          <a href="shop.php" class="option-btn">Load More</a>
       </div>
    </section>
+   </div>
+  
 
    <section class="about">
       <div class="flex">
@@ -128,6 +138,15 @@
    </section>
 
    <?php include 'footer.php'; ?>
+   <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Slick Slider JS -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- JavaScript file link -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/header.js"></script>
 
    <script>
       // Retrieve the message from the PHP variable
@@ -155,9 +174,24 @@
             popup.style.display = "none";
          }
       });
+      $(document).ready(function(){
+      $('#product-slider .box-container').slick({
+         // Slick Slider options go here
+         slidesToShow: 3, // Set the number of slides to show at once
+         slidesToScroll: 1, // Set the number of slides to scroll
+         // Add more options as needed
+      });
+   });
+      
    </script>
 
    <!-- JavaScript file link -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
    <script src="js/header.js"></script>
+   <!--slick slider for the product slider-->
+   <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <!-- Slick Slider JS -->
+   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
