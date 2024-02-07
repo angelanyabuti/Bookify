@@ -174,14 +174,7 @@
             popup.style.display = "none";
          }
       });
-      $(document).ready(function(){
-      $('#product-slider .box-container').slick({
-         // Slick Slider options go here
-         slidesToShow: 3, // Set the number of slides to show at once
-         slidesToScroll: 1, // Set the number of slides to scroll
-         // Add more options as needed
-      });
-   });
+      
       
    </script>
 
