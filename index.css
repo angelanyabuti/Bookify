@@ -425,7 +425,7 @@ html {
 .products .box-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: block;
+  display: grid;
   grid-template-columns: repeat(auto-fit, 30rem);
   align-items: flex-start;
   gap: 1.5rem;
