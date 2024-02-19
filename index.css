@@ -8,6 +8,7 @@
   border: none;
   text-decoration: none;
   transition: all 0.2s linear;
+
 }
 :root {
   --border: 0.1rem solid black;
@@ -16,6 +17,7 @@
   --white: #fff;
   --black: #333;
 }
+
 *::-webkit-scrollbar {
   height: 0.5rem;
   width: 1rem;

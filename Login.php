@@ -45,9 +45,7 @@ if (isset($_POST['submit'])) {
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-  <?php
-  include 'header.php';
-  ?>
+ 
   <?php
   if (isset($message)) {
     foreach ($message as $message) {

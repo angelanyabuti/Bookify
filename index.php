@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Attic</title>
+   <title>Bookify</title>
    <!-- CSS file links -->
    <link rel="stylesheet" href="admin.css" />
    <link rel="stylesheet" href="index.css" />
